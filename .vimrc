@@ -15,7 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'w0rp/ale'
 Plugin 'nvie/vim-flake8'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 
 " add all your plugins here (note older versions of Vundle
@@ -39,6 +39,9 @@ au BufNewFile,BufRead *.py
 
 "Adding support for utf8
 set encoding=utf-8
+
+"Get search results always in the centre of the screen
+set scrolloff=999
 
 "Make code look nice
 let python_highlight_all=1
