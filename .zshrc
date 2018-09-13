@@ -2,10 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/samringer/.oh-my-zsh"
+export ZSH="/home/samr/.oh-my-zsh"
+export PATH='/home/samr/srenv/bin/jupyter:$PATH'
 #export PATH=/Library/Frameworks/Python.framework/Version/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH="/Users/samringer/anaconda3/bin:$PATH"
+#export PATH="/Users/samringer/anaconda3/bin:$PATH"
 
+PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -97,6 +100,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias venv="source ~/srenv/bin/activate"
+alias get980="qlogin -q gpu.q@@980"
+alias gettitanx="qlogin -q gpu.q@@titanx"
+alias venv2="source ~/srpython2/bin/activate"
+alias cuda1="export CUDA_VISIBLE_DEVICES=0"
+alias cuda0="export CUDA_VISIBLE_DEVICES=1"
+alias jn="jupyter notebook --no-browser --port=8889"
+
+ln -s ~/End_To_End/kaldi/egs/lf_mmi/ lfm
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
