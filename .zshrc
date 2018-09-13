@@ -73,7 +73,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
+git config --add oh-my-zsh.hide-status 1
+git config --add oh-my-zsh.hide-dirty 1
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
