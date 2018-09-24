@@ -108,6 +108,7 @@ alias cuda1="export CUDA_VISIBLE_DEVICES=0"
 alias cuda0="export CUDA_VISIBLE_DEVICES=1"
 alias jn="jupyter notebook --no-browser --port=8889"
 alias showjn="ssh -N -f -L localhost:8888:localhost:8889 samr@code0"
+alias ct="cd /cantab/exp0/samr"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
