@@ -67,7 +67,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast pip compleat docker docker-compose zsh-completions brew)
+plugins=(z gitfast pip compleat docker docker-compose zsh-completions brew)
 
 source $ZSH/oh-my-zsh.sh
 function git_prompt_info() {
@@ -107,7 +107,6 @@ alias venv2="source ~/srpython2/bin/activate"
 alias cuda1="export CUDA_VISIBLE_DEVICES=0"
 alias cuda0="export CUDA_VISIBLE_DEVICES=1"
 alias jn="jupyter notebook --no-browser --port=8889"
-
 alias showjn="ssh -N -f -L localhost:8888:localhost:8889 samr@code0"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
