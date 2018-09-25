@@ -2,8 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/samr/.oh-my-zsh"
-export PATH='/home/samr/srenv/bin/jupyter:$PATH'
+export ZSH="$HOME/.oh-my-zsh"
+export PATH='$HOME/srenv/bin/jupyter:$PATH'
 #export PATH=/Library/Frameworks/Python.framework/Version/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 #export PATH="/Users/samringer/anaconda3/bin:$PATH"
 
