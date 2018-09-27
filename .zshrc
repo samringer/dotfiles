@@ -114,5 +114,11 @@ alias colo="ssh samr@cam2c01.farm.speechmatics.io"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+# ls after every cd
+function chpwd() {
+	emulate -L zsh
+	ls
+}
+#
 # Using Vi Mode
 bindkey -v
