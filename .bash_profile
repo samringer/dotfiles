@@ -11,4 +11,5 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 export SHELL=/bin/zsh
-exec /bin/zsh -l
+#The line below runs zsh automatically but has caused v annoying invisible errors. Should really find another way of doing it.
+#exec /bin/zsh -l
