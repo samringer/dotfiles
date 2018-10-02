@@ -100,7 +100,7 @@ function git_prompt_info() {
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias venv="source ~/srenv/bin/activate"
+alias srenv="source ~/srenv/bin/activate"
 alias get980="qlogin -q gpu.q@@980"
 alias gettitanx="qlogin -q gpu.q@@titanx"
 alias venv2="source ~/srpython2/bin/activate"
@@ -112,6 +112,8 @@ alias showjn="ssh -N -f -L localhost:8888:localhost:8889 samr@code0"
 alias ct="cd /cantab/exp0/samr"
 alias all_q="qstat -f -u '*' | less "
 alias colo="ssh samr@cam2c01.farm.speechmatics.io"
+alias venv="source ~/venv/bin/activate"
+alias puncdata="cd /cantab/exp0/inbetweeners/punctuation"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
