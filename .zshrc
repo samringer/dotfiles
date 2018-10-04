@@ -75,6 +75,15 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 # User configuration
+#
+# Quickly get output of a job
+qcat () {
+   if [ "$#" -eq 1 ]; then
+	cat $(qstat -j $1 | grep log | grep std | cut -d ":" -f4)
+   else
+	echo "Usage: qcat <jobid>" >&2
+   fi
+}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
