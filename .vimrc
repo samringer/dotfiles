@@ -50,6 +50,9 @@ syntax on
 "Adding hybrid line numbering
 :set number relativenumber
 
+"Stops vim from splitting lines
+set formatoptions-=tc
+
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
