@@ -100,6 +100,7 @@ function git_prompt_info() {
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias paperspace="ssh paperspace@184.105.216.179"
 alias venv="source ~/srenv/bin/activate"
 alias get980="qlogin -q gpu.q@@980"
 alias gettitanx="qlogin -q gpu.q@@titanx"
