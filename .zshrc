@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH='$HOME/srenv/bin/jupyter:$PATH'
+export PATH="$HOME/srenv/bin/jupyter:$PATH"
 #export PATH=/Library/Frameworks/Python.framework/Version/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 #export PATH="/Users/samringer/anaconda3/bin:$PATH"
 
@@ -75,6 +75,15 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 # User configuration
+#
+# Quickly get output of a job
+qcat () {
+   if [ "$#" -eq 1 ]; then
+	cat $(qstat -j $1 | grep log | grep std | cut -d ":" -f4)
+   else
+	echo "Usage: qcat <jobid>" >&2
+   fi
+}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -101,7 +110,7 @@ function git_prompt_info() {
 #
 # Example aliases
 alias paperspace="ssh paperspace@184.105.216.179"
-alias venv="source ~/srenv/bin/activate"
+alias srenv="source ~/srenv/bin/activate"
 alias get980="qlogin -q gpu.q@@980"
 alias gettitanx="qlogin -q gpu.q@@titanx"
 alias venv2="source ~/srpython2/bin/activate"
@@ -113,6 +122,8 @@ alias showjn="ssh -N -f -L localhost:8888:localhost:8889 samr@code0"
 alias ct="cd /cantab/exp0/samr"
 alias all_q="qstat -f -u '*' | less "
 alias colo="ssh samr@cam2c01.farm.speechmatics.io"
+alias venv="source ~/venv/bin/activate"
+alias puncdata="cd /cantab/exp0/inbetweeners/punctuation"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
@@ -124,3 +135,8 @@ function chpwd() {
 #
 # Using Vi Mode
 bindkey -v
+
+#Allow smart searching
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
