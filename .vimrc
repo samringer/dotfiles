@@ -40,6 +40,9 @@ au BufNewFile,BufRead *.py
 "Adding support for utf8
 set encoding=utf-8
 
+"better colours
+set background=light
+
 "Get search results always in the centre of the screen
 set scrolloff=999
 
