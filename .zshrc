@@ -67,7 +67,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z gitfast pip compleat docker docker-compose zsh-completions brew)
+plugins=(history-substring-search z gitfast pip compleat docker docker-compose zsh-completions brew)
 
 source $ZSH/oh-my-zsh.sh
 function git_prompt_info() {
@@ -123,7 +123,7 @@ alias ct="cd /cantab/exp0/samr"
 alias all_q="qstat -f -u '*' | less "
 alias colo="ssh samr@cam2c01.farm.speechmatics.io"
 alias venv="source ~/venv/bin/activate"
-alias tf="source ~/tf_venv/bin/acitvate"
+alias tf="source ~/tf_venv/bin/activate"
 alias puncdata="cd /cantab/exp0/inbetweeners/punctuation"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -137,7 +137,10 @@ function chpwd() {
 # Using Vi Mode
 bindkey -v
 
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
+#bindkey "^[[A" history-beginning-search-backward
+#bindkey "^[[B" history-beginning-search-forward
 #Allow smart searching
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
-
