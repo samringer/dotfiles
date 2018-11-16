@@ -144,3 +144,6 @@ bindkey "^[[B" history-substring-search-down
 #Allow smart searching
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
+alias common="vim ~/git/normaliser/normaliser/common/baseNormaliser.py"
+alias en="vim ~/git/normaliser/normaliser/en/langNormaliser.py"
+alias norm="vim ~/git/normaliser/normaliser/normalise.py"
