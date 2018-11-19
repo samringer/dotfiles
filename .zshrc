@@ -147,3 +147,4 @@ bindkey '^[[B' down-line-or-search
 alias common="vim ~/git/normaliser/normaliser/common/baseNormaliser.py"
 alias en="vim ~/git/normaliser/normaliser/en/langNormaliser.py"
 alias norm="vim ~/git/normaliser/normaliser/normalise.py"
+alias azure="ssh samr@172.31.101.14"
