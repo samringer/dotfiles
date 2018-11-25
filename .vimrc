@@ -18,6 +18,9 @@ Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 
+" Tmux and vim navigator
+Bundle 'christoomey/vim-tmux-navigator'
+
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
@@ -53,8 +56,18 @@ syntax on
 "Stops vim from splitting lines
 set formatoptions-=tc
 
+"Vim window resizing
+set splitbelow
+set splitright
+
 "Allow mouse scrolling
 :set mouse=a 
+
+"Better highlighting
+set background=light
+
+"Buffer stuff
+set hidden
 
 :augroup numbertoggle
 :  autocmd!
