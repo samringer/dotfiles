@@ -17,6 +17,7 @@ Plugin 'w0rp/ale'
 Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdtree'
 
 " Tmux and vim navigator
 Bundle 'christoomey/vim-tmux-navigator'
@@ -59,6 +60,9 @@ set formatoptions-=tc
 "Vim window resizing
 set splitbelow
 set splitright
+
+"NERDtree mapping
+nmap <C-n> :NERDTreeToggle<CR>
 
 "Allow mouse scrolling
 :set mouse=a 
