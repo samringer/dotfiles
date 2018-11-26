@@ -64,6 +64,10 @@ set splitright
 "NERDtree mapping
 nmap <C-n> :NERDTreeToggle<CR>
 
+"NERDtree appearance
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 "NERDtree relative line numbers
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
