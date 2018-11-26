@@ -64,6 +64,10 @@ set splitright
 "NERDtree mapping
 nmap <C-n> :NERDTreeToggle<CR>
 
+"NERDtree relative line numbers
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
+
 "Allow mouse scrolling
 :set mouse=a 
 
