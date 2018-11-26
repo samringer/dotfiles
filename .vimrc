@@ -88,6 +88,10 @@ let NERDTreeDirArrows = 1
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 
+"Better NERDtree closing
+let NERDTreeQuitOnOpen = 1
+autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
+
 "Allow mouse scrolling
 :set mouse=a 
 
