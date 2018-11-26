@@ -61,6 +61,22 @@ set formatoptions-=tc
 set splitbelow
 set splitright
 
+"Turn off swap files
+set noswapfile
+set nobackup
+set nowb
+
+"Keep undo history across sessions
+if has('persistent_undo')
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
+endif
+
+" Better search
+set hlsearch
+set incsearch
+
 "NERDtree mapping
 nmap <C-n> :NERDTreeToggle<CR>
 
