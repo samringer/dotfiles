@@ -17,6 +17,10 @@ Plugin 'w0rp/ale'
 Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdtree'
+
+" Tmux and vim navigator
+Bundle 'christoomey/vim-tmux-navigator'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -53,8 +57,44 @@ syntax on
 "Stops vim from splitting lines
 set formatoptions-=tc
 
+"Vim window resizing
+set splitbelow
+set splitright
+
+"Turn off swap files
+set noswapfile
+set nobackup
+set nowb
+
+"Keep undo history across sessions
+if has('persistent_undo')
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
+endif
+
+" Better search
+set hlsearch
+set incsearch
+
+"NERDtree mapping
+nmap <C-n> :NERDTreeToggle<CR>
+
+"NERDtree relative line numbers
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
+
+"Better NERDtree closing
+let NERDTreeQuitOnOpen = 1
+
 "Allow mouse scrolling
 :set mouse=a 
+
+"Better highlighting
+set background=light
+
+"Buffer stuff
+set hidden
 
 :augroup numbertoggle
 :  autocmd!
