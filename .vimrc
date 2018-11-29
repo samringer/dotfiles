@@ -73,12 +73,11 @@ if has('persistent_undo')
   set undofile
 endif
 
-" Better search
-set hlsearch
-set incsearch
-
 "NERDtree mapping
 nmap <C-n> :NERDTreeToggle<CR>
+
+"Make NERDTREE look cleaner
+let NERDTreeDirArrows = 1
 
 "NERDtree relative line numbers
 let NERDTreeShowLineNumbers=1
