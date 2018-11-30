@@ -90,6 +90,11 @@ qcat () {
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+# Use GNU core utils if on a mac
+if [ ${HOME} = "/Users/samringer" ]; then
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+fi
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -148,3 +153,4 @@ alias common="vim ~/git/normaliser/normaliser/common/baseNormaliser.py"
 alias en="vim ~/git/normaliser/normaliser/en/langNormaliser.py"
 alias norm="vim ~/git/normaliser/normaliser/normalise.py"
 alias azure="ssh samr@172.31.101.14"
+alias dirvenv="source venv/bin/activate"
