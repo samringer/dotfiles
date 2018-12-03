@@ -15,7 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'w0rp/ale'
 Plugin 'nvie/vim-flake8'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 
