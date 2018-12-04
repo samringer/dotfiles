@@ -6,11 +6,6 @@
   editor = vim
   whitespace = fix,trailing-space,space-before-tab,cr-at-eol
 
-[pager]
-  diff = diff-so-fancy | less --tabs=1,5 -RFX
-  show = diff-so-fancy | less --tabs=1,5 -RFX
-    branch = false
-
 [branch]
   autosetuprebase = always
 
