@@ -95,6 +95,9 @@ if [ ${HOME} = "/Users/samringer" ]; then
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 fi
 
+# Enable extended globbing
+setopt extended_glob
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
