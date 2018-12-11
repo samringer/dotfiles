@@ -95,6 +95,11 @@ if [ ${HOME} = "/Users/samringer" ]; then
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 fi
 
+# Include anaconda if we are on a local machine
+if [ ${HOME} = "/Users/samringer" ]; then
+	export PATH="$HOME/anaconda3/bin:$PATH"
+fi
+
 # Enable extended globbing
 setopt extended_glob
 
