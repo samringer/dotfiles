@@ -85,6 +85,15 @@ qcat () {
    fi
 }
 
+# quickly search command history
+hi () {
+   if [ "$#" -eq 1 ]; then
+	history | grep "$1"
+   else
+	echo "Usage: hi <substring>" >&2
+   fi
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -93,11 +102,6 @@ qcat () {
 # Use GNU core utils if on a mac
 if [ ${HOME} = "/Users/samringer" ]; then
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
-fi
-
-# Include anaconda if we are on a local machine
-if [ ${HOME} = "/Users/samringer" ]; then
-	export PATH="$HOME/anaconda3/bin:$PATH"
 fi
 
 # Enable extended globbing
