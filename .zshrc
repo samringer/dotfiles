@@ -94,6 +94,15 @@ hi () {
    fi
 }
 
+# search queue for a string
+qs () {
+   if [ "$#" -eq 1 ]; then
+	qstat -f -u '*' | grep "$1"
+   else
+	echo "Usage: qs <substring>" >&2
+   fi
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
