@@ -103,6 +103,22 @@ qs () {
    fi
 }
 
+# Stage, commit and push git files with ctrl g
+git_prepare() {
+   echo "hi"
+   if [ -n "$BUFFER" ]; then
+	BUFFER="git add -u && git commit -m \"$BUFFER\" && git push"
+   fi
+
+   if [ -z "$BUFFER" ]; then
+	BUFFER="git add -u && git commit -v && git push"
+   fi
+			
+   zle accept-line
+}
+zle -N git_prepare
+bindkey "^g" git_prepare
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
