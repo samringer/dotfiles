@@ -118,6 +118,14 @@ git_prepare() {
 zle -N git_prepare
 bindkey "^g" git_prepare
 
+# Add prev command to vim buffer and run it after edit
+edit_and_run() {
+	BUFFER="fc"
+	zle accept-line
+}
+zle -N edit_and_run
+bindkey "^v" edit_and_run
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
