@@ -105,7 +105,6 @@ qs () {
 
 # Stage, commit and push git files with ctrl g
 git_prepare() {
-   echo "hi"
    if [ -n "$BUFFER" ]; then
 	BUFFER="git add -u && git commit -m \"$BUFFER\" && git push"
    fi
