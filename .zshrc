@@ -85,6 +85,24 @@ qcat () {
    fi
 }
 
+# quickly search command history
+hi () {
+   if [ "$#" -eq 1 ]; then
+	history | grep "$1"
+   else
+	echo "Usage: hi <substring>" >&2
+   fi
+}
+
+# search queue for a string
+qs () {
+   if [ "$#" -eq 1 ]; then
+	qstat -f -u '*' | grep "$1"
+   else
+	echo "Usage: qs <substring>" >&2
+   fi
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -95,6 +113,10 @@ if [ ${HOME} = "/Users/samringer" ]; then
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 fi
 
+# Use anaconda if on sergei
+if [ ${HOME} = "/home/sam" ]; then
+    export PATH="/home/sam/anaconda3/bin:$PATH"
+fi
 # Enable extended globbing
 setopt extended_glob
 
