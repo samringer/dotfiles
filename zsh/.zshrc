@@ -120,8 +120,8 @@ bindkey "^g" git_prepare
 
 # Add prev command to vim buffer and run it after edit
 edit_and_run() {
-	BUFFER="fc"
-	zle accept-line
+   BUFFER="fc"
+   zle accept-line
 }
 zle -N edit_and_run
 bindkey "^v" edit_and_run
