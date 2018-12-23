@@ -108,15 +108,6 @@ qs () {
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Use GNU core utils if on a mac
-if [ ${HOME} = "/Users/samringer" ]; then
-    export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
-fi
-
-# Use anaconda if on sergei
-if [ ${HOME} = "/home/sam" ]; then
-    export PATH="/home/sam/anaconda3/bin:$PATH"
-fi
 # Enable extended globbing
 setopt extended_glob
 

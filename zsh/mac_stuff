@@ -1,0 +1,3 @@
+# Use GNU core utils if on a mac
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+
