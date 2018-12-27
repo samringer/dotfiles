@@ -130,6 +130,7 @@ alias puncdata="cd /cantab/exp0/inbetweeners/punctuation"
 alias azure="ssh samr@172.31.101.14"
 alias dirvenv="source venv/bin/activate"
 alias sergei="ssh 109.156.140.20"
+alias sergeil="ssh 192.168.1.168"
 alias v="vim -p"
 alias c="cd"
 

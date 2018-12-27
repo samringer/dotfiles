@@ -4,7 +4,8 @@ function up_widget() {
    zle accept-line
 }
 zle -N up_widget
-bindkey "^k" up_widget
+bindkey -r "^l"
+bindkey "^l" up_widget
 
 # git add ci and push
 function git_prepare() {
@@ -38,14 +39,6 @@ function edit_and_run() {
 zle -N edit_and_run
 bindkey "^v" edit_and_run
 
-# LS
-function ctrl_l() {
-   BUFFER="ls"
-   zle accept-line
-}
-zle -N ctrl_l
-bindkey "^l" ctrl_l
-
 # Enter
 function enter_line() {
    zle accept-line
@@ -60,3 +53,5 @@ function add_sudo() {
 }
 zle -N add_sudo
 bindkey "^s" add_sudo
+
+bindkey "^k" expand-or-complete
