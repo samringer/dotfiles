@@ -17,6 +17,7 @@ Plugin 'w0rp/ale'
 Plugin 'nvie/vim-flake8'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sandeepcr529/buffet.vim'
 
 " Tmux and vim navigator
 Bundle 'christoomey/vim-tmux-navigator'
@@ -71,6 +72,9 @@ if has('persistent_undo')
   set undodir=~/.vim/backups
   set undofile
 endif
+
+"Buffet mapping
+map <C-m> :Bufferlist<CR>
 
 "NERDtree mapping
 nmap <C-n> :NERDTreeToggle<CR>

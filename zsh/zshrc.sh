@@ -134,7 +134,8 @@ alias sergei="ssh $homeIP"
 alias sergeijl="ssh -N -L localhost:8888:localhost:8888 sam@$homeIP"
 alias sergeitb="ssh -N -L localhost:6006:localhost:6006 sam@$homeIP"
 alias sergeil="ssh 192.168.1.168"
-alias v="vim -p"
+#alias v="vim -p"
+alias v="vim"
 alias c="cd"
 
 # ls after every cd
