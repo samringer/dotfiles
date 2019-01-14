@@ -134,7 +134,8 @@ alias sergei="ssh $homeIP"
 alias sergeijl="ssh -N -L localhost:8888:localhost:8888 sam@$homeIP"
 alias sergeitb="ssh -N -L localhost:6006:localhost:6006 sam@$homeIP"
 alias sergeil="ssh 192.168.1.168"
-alias v="vim -p"
+#alias v="vim -p"
+alias v="vim"
 alias c="cd"
 
 # ls after every cd
@@ -148,17 +149,20 @@ bindkey -v
 
 # Fix for arrow-key searching
 # start typing + [Up-Arrow] - fuzzy find history forward
-if [[ "${terminfo[kcuu1]}" != "" ]]; then
-	autoload -U up-line-or-beginning-search
-	zle -N up-line-or-beginning-search
-	bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
-fi
+#if [[ "${terminfo[kcuu1]}" != "" ]]; then
+#	autoload -U up-line-or-beginning-search
+#	zle -N up-line-or-beginning-search
+#	bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+#fi
 # start typing + [Down-Arrow] - fuzzy find history backward
-if [[ "${terminfo[kcud1]}" != "" ]]; then
-	autoload -U down-line-or-beginning-search
-	zle -N down-line-or-beginning-search
-	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
-fi
+#if [[ "${terminfo[kcud1]}" != "" ]]; then
+#	autoload -U down-line-or-beginning-search
+#	zle -N down-line-or-beginning-search
+#	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+#fi
+
 
 source ~/git/dotfiles/zsh/keybindings.sh
 export PATH=$PATH:$HOME/git/dotfiles/utils
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
