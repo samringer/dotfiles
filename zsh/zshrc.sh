@@ -3,11 +3,17 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/srenv/bin/jupyter:$PATH"
-#export PATH=/Library/Frameworks/Python.framework/Version/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-#export PATH="/Users/samringer/anaconda3/bin:$PATH"
-
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+
+# Add anaconda to python path if on personal laptop 
+if [ "$HOME" = "/Users/sam" ]; then
+	export PATH=/Users/sam/anaconda3/bin:${PATH}
+fi
+# Add anaconda to python path if on work laptop 
+if [ "$HOME" = "/Users/samringer" ]; then
+	export PATH=/Users/samringer/anaconda3/bin:${PATH}
+fi
+
 export PATH
 ZSH_THEME="avit"
 
