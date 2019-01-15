@@ -89,6 +89,10 @@ autocmd FileType nerdtree setlocal relativenumber
 "Better NERDtree closing
 let NERDTreeQuitOnOpen = 1
 
+"Custom NERDtree split keys
+let NERDTreeMapOpenVSplit='v'
+let NERDTreeMapOpenSplit='hh'
+
 "Allow mouse scrolling
 :set mouse=a 
 
