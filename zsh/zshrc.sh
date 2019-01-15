@@ -13,6 +13,10 @@ fi
 if [ "$HOME" = "/Users/samringer" ]; then
 	export PATH=/Users/samringer/anaconda3/bin:${PATH}
 fi
+# Add anaconda to python path if on sergei
+if [ "$HOME" = "/home/sam" ]; then
+	export PATH=/home/sam/anaconda3/bin:${PATH}
+fi
 
 export PATH
 ZSH_THEME="avit"
