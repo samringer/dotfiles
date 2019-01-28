@@ -174,5 +174,8 @@ bindkey -v
 
 source ~/git/dotfiles/zsh/keybindings.sh
 export PATH=$PATH:$HOME/git/dotfiles/utils
+# Limit history
+export HISTSIZE=1000
+export HISTFILESIZE=1000
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
