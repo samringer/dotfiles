@@ -88,6 +88,7 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 "Make NERDTREE look cleaner
 let NERDTreeDirArrows = 1
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 "NERDtree relative line numbers
 let NERDTreeShowLineNumbers=1
