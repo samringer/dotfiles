@@ -5,18 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
-# Add anaconda to python path if on personal laptop 
-if [ "$HOME" = "/Users/sam" ]; then
-	export PATH=/Users/sam/anaconda3/bin:${PATH}
-fi
-# Add anaconda to python path if on work laptop 
-if [ "$HOME" = "/Users/samringer" ]; then
-	export PATH=/Users/samringer/anaconda3/bin:${PATH}
-fi
-# Add anaconda to python path if on sergei
-if [ "$HOME" = "/home/sam" ]; then
-	export PATH=/home/sam/anaconda3/bin:${PATH}
-fi
+export PATH=$HOME/anaconda3/bin:$PATH
 
 export PATH
 ZSH_THEME="avit"
