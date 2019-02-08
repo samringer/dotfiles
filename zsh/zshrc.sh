@@ -165,4 +165,4 @@ export PATH=$PATH:$HOME/git/dotfiles/utils
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 bindkey "^N" history-substring-search-up
-bindkey "^P" history-substring-search-up
+bindkey "^P" history-substring-search-down
