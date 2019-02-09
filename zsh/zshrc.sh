@@ -5,18 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
-# Add anaconda to python path if on personal laptop 
-if [ "$HOME" = "/Users/sam" ]; then
-	export PATH=/Users/sam/anaconda3/bin:${PATH}
-fi
-# Add anaconda to python path if on work laptop 
-if [ "$HOME" = "/Users/samringer" ]; then
-	export PATH=/Users/samringer/anaconda3/bin:${PATH}
-fi
-# Add anaconda to python path if on sergei
-if [ "$HOME" = "/home/sam" ]; then
-	export PATH=/home/sam/anaconda3/bin:${PATH}
-fi
+export PATH=$HOME/anaconda3/bin:$PATH
 
 export PATH
 ZSH_THEME="avit"
@@ -139,7 +128,7 @@ alias tf="source ~/tf_venv/bin/activate"
 alias puncdata="cd /cantab/exp0/inbetweeners/punctuation"
 alias azure="ssh samr@172.31.101.14"
 alias dirvenv="source venv/bin/activate"
-export homeIP="86.138.66.213"
+export homeIP="109.156.2.103"
 alias sergei="ssh sam@samsergei.hopto.org"
 alias sergeijl="ssh -N -L localhost:8888:localhost:8888 sam@samsergei.hopto.org"
 alias sergeitb="ssh -N -L localhost:6006:localhost:6006 sam@samsergei.hopto.org"
@@ -171,8 +160,9 @@ bindkey -v
 #	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 #fi
 
-
 source ~/git/dotfiles/zsh/keybindings.sh
 export PATH=$PATH:$HOME/git/dotfiles/utils
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
+bindkey "^N" history-substring-search-up
+bindkey "^P" history-substring-search-down
