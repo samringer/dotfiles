@@ -81,10 +81,10 @@ if has('persistent_undo')
 endif
 
 "Buffet mapping
-map <C-w> :Bufferlist<CR>
+map <C-v> :Bufferlist<CR>
 
 "NERDtree mapping
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-c> :NERDTreeToggle<CR>
 
 "Make NERDTREE look cleaner
 let NERDTreeDirArrows = 1
