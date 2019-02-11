@@ -112,6 +112,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 #
 alias paperspace="ssh paperspace@184.105.216.179"
 alias srenv="source ~/srenv/bin/activate"
+alias getgpu="qlogin -q gpu.q"
 alias get980="qlogin -q gpu.q@@980"
 alias gettitanx="qlogin -q gpu.q@@titanx"
 alias venv2="source ~/srpython2/bin/activate"
