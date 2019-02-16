@@ -137,12 +137,11 @@ alias sergeil="ssh 192.168.1.168"
 #alias v="vim -p"
 alias v="vim"
 alias c="cd"
-alias ls='ls --hide="__pycache__"'
 
 # ls after every cd
 function chpwd() {
 	emulate -L zsh
-	ls
+	ls --hide-"__pycache__"
 }
 #
 # Using Vi Mode
