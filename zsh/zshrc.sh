@@ -141,7 +141,7 @@ alias c="cd"
 # ls after every cd
 function chpwd() {
 	emulate -L zsh
-	ls --hide-"__pycache__"
+	ls --hide="__pycache__"
 }
 #
 # Using Vi Mode
