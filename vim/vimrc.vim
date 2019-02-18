@@ -110,6 +110,9 @@ set background=light
 "Buffer stuff
 set hidden
 
+"Copy and paste using y etc
+set clipboard+=unnamed
+
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
