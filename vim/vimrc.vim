@@ -81,7 +81,7 @@ if has('persistent_undo')
 endif
 
 "Buffet mapping
-map <C-b> :Bufferlist<CR>
+map <C-h> :Bufferlist<CR>
 
 "NERDtree mapping
 nmap <C-a> :NERDTreeToggle<CR>
