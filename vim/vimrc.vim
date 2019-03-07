@@ -113,6 +113,10 @@ set hidden
 "Copy and paste using y etc
 set clipboard+=unnamed
 
+"Subtle warning if lines exceed 100.
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%101v.\+/
+
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
