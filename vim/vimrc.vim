@@ -110,8 +110,9 @@ set background=light
 "Buffer stuff
 set hidden
 
-"Copy and paste using y etc
-set clipboard+=unnamed
+"Copy and paste stuff 
+set clipboard=unnamedplus
+set mouse=r
 
 :augroup numbertoggle
 :  autocmd!
