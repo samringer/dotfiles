@@ -11,6 +11,9 @@ export PATH=$HOME/anaconda3/bin:$PATH
 export PATH
 ZSH_THEME="avit"
 
+#Allow for local pip
+export Path=$HOME/.local/bin:$PATH
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
