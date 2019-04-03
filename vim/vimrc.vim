@@ -50,8 +50,8 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 "Set leaders
-:let mapleader = <space>
-:let maplocalleader = <space><space>
+let mapleader = <space>
+let maplocalleader = <space><space>
 
 "Adding support for utf8
 set encoding=utf-8
