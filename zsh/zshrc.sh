@@ -166,6 +166,10 @@ bindkey -v
 #	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 #fi
 
+# ASDF stuff
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
 source ~/git/dotfiles/zsh/keybindings.sh
 export PATH=$PATH:$HOME/git/dotfiles/utils
 bindkey "^[[A" history-substring-search-up
