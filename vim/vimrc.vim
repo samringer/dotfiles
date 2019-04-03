@@ -49,6 +49,10 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
+"Set leaders
+:let mapleader = <space>
+:let maplocalleader = <space><space>
+
 "Adding support for utf8
 set encoding=utf-8
 
@@ -88,15 +92,15 @@ map <C-e> :Bufferlist<CR>
 nmap <C-a> :NERDTreeToggle<CR>
 
 "Make NERDTREE look cleaner
-let NERDTreeDirArrows = 1
-let g:NERDTreeNodeDelimiter = "\u00a0"
+let NERDTreeDirArrows=1
+let g:NERDTreeNodeDelimiter="\u00a0"
 
 "NERDtree relative line numbers
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 
 "Better NERDtree closing
-let NERDTreeQuitOnOpen = 1
+let NERDTreeQuitOnOpen=1
 
 "Custom NERDtree split keys
 let NERDTreeMapOpenVSplit='v'
