@@ -4,6 +4,7 @@ filetype off                  " required
 "set the runtime path to include Vundle and initialize
 "set rtp+=~/home/samr/.vim/bundle/Vundle.vim
 "set rtp=/home/samr/.vim
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -107,7 +108,7 @@ let NERDTreeMapOpenVSplit='v'
 let NERDTreeMapOpenSplit='hh'
 
 "Allow mouse scrolling
-:set mouse=a 
+set mouse=a 
 
 "Better highlighting
 set background=light
@@ -118,6 +119,10 @@ set hidden
 "Copy and paste stuff 
 set clipboard=unnamedplus
 set mouse=r
+
+"Custom mappings
+noremap <leader>ev :split $HOME/git/dotfiles/vim/vimrc.vim<cr>
+noremap <leader>sv :source $HOME/.vimrc<cr>
 
 :augroup numbertoggle
 :  autocmd!
