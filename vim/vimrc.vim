@@ -121,14 +121,15 @@ set hidden
 set clipboard=unnamedplus
 set mouse=r
 
-"Custom mappings
-noremap <leader>ev :split $HOME/git/dotfiles/vim/vimrc.vim<cr>
-noremap <leader>sv :source $HOME/.vimrc<cr>
-noremap <leader>0 ^
-noremap <leader>pdb Oimport pdb; pdb.set_trace()<esc>
-
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
+
+"Custom mappings
+noremap <leader>ev :split $HOME/git/dotfiles/vim/vimrc.vim<cr>G
+noremap <leader>sv :source $HOME/.vimrc<cr>
+noremap <leader>0 ^
+noremap <leader>pdb Oimport pdb; pdb.set_trace()<esc>
+noremap <leader>todo O# TODO:<Space> 
