@@ -101,6 +101,10 @@ qs () {
 # Enable extended globbing
 setopt extended_glob
 
+# History across tmux windows
+setopt inc_append_history
+setopt share_history
+
 export EDITOR='vim'
 
 # Compilation flags

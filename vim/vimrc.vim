@@ -20,10 +20,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sandeepcr529/buffet.vim'
-
-"for vlime, need to run sbcl --load $HOME/vim/bundle/vlime/lisp/start-vlime.lisp
-"Also requires quicklisp to be installed.
-Plugin 'l04m33/vlime', {'rtp': 'vim/'}
+Plugin 'vim-scripts/slimv.vim'
 
 " Tmux and vim navigator
 Bundle 'christoomey/vim-tmux-navigator'
