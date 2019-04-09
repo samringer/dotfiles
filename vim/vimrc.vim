@@ -1,3 +1,7 @@
+"Set leaders
+let mapleader = " "
+let maplocalleader = "  "
+
 set nocompatible              " required
 filetype off                  " required
 
@@ -50,9 +54,6 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-"Set leaders
-let mapleader = " "
-let maplocalleader = "  "
 
 "Adding support for utf8
 set encoding=utf-8
@@ -85,6 +86,9 @@ if has('persistent_undo')
   set undodir=~/.vim/backups
   set undofile
 endif
+
+"Slimv stuff
+let g:lisp_rainbow=1
 
 "Buffet mapping
 map <C-e> :Bufferlist<CR>
