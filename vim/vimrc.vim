@@ -20,7 +20,6 @@ Plugin 'nvie/vim-flake8'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sandeepcr529/buffet.vim'
-Plugin 'vim-scripts/slimv.vim'
 
 " Tmux and vim navigator
 Bundle 'christoomey/vim-tmux-navigator'
