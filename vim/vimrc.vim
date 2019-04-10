@@ -1,9 +1,14 @@
+"Set leaders
+let mapleader = " "
+let maplocalleader = "  "
+
 set nocompatible              " required
 filetype off                  " required
 
 "set the runtime path to include Vundle and initialize
 "set rtp+=~/home/samr/.vim/bundle/Vundle.vim
 "set rtp=/home/samr/.vim
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -19,10 +24,6 @@ Plugin 'nvie/vim-flake8'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sandeepcr529/buffet.vim'
-
-"for vlime, need to run sbcl --load $HOME/vim/bundle/vlime/lisp/start-vlime.lisp
-"Also requires quicklisp to be installed.
-Plugin 'l04m33/vlime', {'rtp': 'vim/'}
 
 " Tmux and vim navigator
 Bundle 'christoomey/vim-tmux-navigator'
@@ -53,9 +54,6 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-"Set leaders
-let mapleader = " "
-let maplocalleader = "  "
 
 "Adding support for utf8
 set encoding=utf-8
@@ -89,6 +87,9 @@ if has('persistent_undo')
   set undofile
 endif
 
+"Slimv stuff
+let g:lisp_rainbow=1
+
 "Buffet mapping
 map <C-e> :Bufferlist<CR>
 
@@ -111,7 +112,7 @@ let NERDTreeMapOpenVSplit='v'
 let NERDTreeMapOpenSplit='hh'
 
 "Allow mouse scrolling
-:set mouse=a 
+set mouse=a 
 
 "Better highlighting
 set background=light
@@ -132,3 +133,10 @@ iabbrev im import
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
+
+"Custom mappings
+noremap <leader>ev :split $HOME/git/dotfiles/vim/vimrc.vim<cr>G
+noremap <leader>sv :source $HOME/.vimrc<cr>
+noremap <leader>0 ^
+noremap <leader>pdb Oimport pdb; pdb.set_trace()<esc>
+noremap <leader>todo O# TODO:<Space> 

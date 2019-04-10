@@ -101,6 +101,10 @@ qs () {
 # Enable extended globbing
 setopt extended_glob
 
+# History across tmux windows
+setopt inc_append_history
+setopt share_history
+
 export EDITOR='vim'
 
 # Compilation flags
@@ -165,10 +169,6 @@ bindkey -v
 #	zle -N down-line-or-beginning-search
 #	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 #fi
-
-# ASDF stuff
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 
 source ~/git/dotfiles/zsh/keybindings.sh
 export PATH=$PATH:$HOME/git/dotfiles/utils
