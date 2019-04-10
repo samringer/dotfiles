@@ -123,6 +123,10 @@ set hidden
 set clipboard=unnamedplus
 set mouse=r
 
+"Abbreviations
+iabbrev fr from
+iabbrev im import
+
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
