@@ -51,7 +51,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history-substring-search z gitfast pip compleat docker docker-compose zsh-completions brew)
+plugins=(history-substring-search z gitfast pip compleat docker docker-compose brew)
 
 source $ZSH/oh-my-zsh.sh
 
