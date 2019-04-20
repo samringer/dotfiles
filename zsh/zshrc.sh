@@ -147,6 +147,7 @@ alias sergeil="ssh sam@$NPS_IP"
 alias v="vim"
 alias c="cd"
 alias g="git"
+alias data="cd /home/sam/data"
 
 # ls after every cd
 function chpwd() {
