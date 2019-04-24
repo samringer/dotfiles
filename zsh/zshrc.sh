@@ -51,7 +51,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history-substring-search z gitfast pip compleat docker docker-compose zsh-completions brew)
+plugins=(history-substring-search z gitfast pip compleat docker docker-compose brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,14 +139,16 @@ alias azure="ssh samr@172.31.101.14"
 alias dirvenv="source venv/bin/activate"
 export NPS_IP="82.8.135.62"
 alias sergei="ssh sam@samsergei.hopto.org"
-alias sergeijl="ssh -N -L localhost:8888:localhost:8888 $NPS_IP"
-alias sergeitb="ssh -N -L localhost:6006:localhost:6006 $NPS_IP"
-alias sergeil="ssh $NPS_IP"
 alias exp="cd /cantab/exp0/inbetweeners/celeba/"
+alias sergeijl="ssh -N -L localhost:8888:localhost:8888 sam@$NPS_IP"
+alias sergeitb="ssh -N -L localhost:6006:localhost:6006 sam@$NPS_IP"
+alias sergeil="ssh sam@$NPS_IP"
 #alias sergeil="ssh 192.168.1.168"
 #alias v="vim -p"
 alias v="vim"
 alias c="cd"
+alias g="git"
+alias data="cd /home/sam/data"
 
 # ls after every cd
 function chpwd() {
