@@ -142,3 +142,4 @@ noremap <leader>pdb Oimport pdb; pdb.set_trace()<esc>
 noremap <leader>todo O# TODO:
 noremap <leader>l ggjj
 noremap <leader>test iif<Space>__name__<Space>==<Space>"__main__":<cr>unittest.main()<cr>
+noremap <leader>3 ^i#<esc>
