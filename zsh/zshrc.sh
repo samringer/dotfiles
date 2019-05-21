@@ -150,6 +150,7 @@ alias v="vim"
 alias c="cd"
 alias g="git"
 alias data="cd /home/sam/data"
+alias ns="nvidia-smi"
 
 # ls after every cd
 function chpwd() {
