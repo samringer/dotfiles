@@ -4,4 +4,4 @@ echo "source $HOME/git/dotfiles/tmux/tmux.conf" > $HOME/.tmux.conf
 echo "[include]" > $HOME/.gitconfig
 echo "path = $HOME/git/dotfiles/git.config" >> $HOME/.gitconfig
 cat vim/flake8.ignores >> $HOME/.config/flake8
-
+zsh
