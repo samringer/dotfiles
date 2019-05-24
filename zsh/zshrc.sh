@@ -151,6 +151,7 @@ alias c="cd"
 alias g="git"
 alias data="cd /home/sam/data"
 alias ns="nvidia-smi"
+alias tb="$HOME/git/dotfiles/scripts/remote_tensorboard_launch.sh"
 
 # ls after every cd
 function chpwd() {

@@ -4,4 +4,5 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 git clone https://github.com/kovisoft/slimv.git $HOME/.vim/bundle/slimv
 #git clone https://github.com/round/CatchMouse.git
+#git clone https://github.com/kovisoft/slimv.git $HOME/.vim/bundle/slimv.vim
 sh ./deploy.sh
