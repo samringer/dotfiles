@@ -1,6 +1,24 @@
 #!/bin/bash
 
-nohup ssh -NL localhost:$2:localhost:$2 $1 &
-sleep 3
-open "http://localhost:$2"
-exit 0
+if (( $# > 2 ));
+   then echo "invalid number of args"
+   exit 1
+fi
+
+destination=$1
+if [[ $# -eq 0 ]];
+    then destination="samr@code19.cantabresearch.com"
+fi
+
+if [[ $destination == "codex" ]];
+    then destination="samr@code19.cantabresearch.com"
+fi
+
+port=6006
+# Overwrite port if it is given
+if [[ $# -eq 2 ]];
+    then port=${2}
+fi
+echo "Running tensorboard from machine ${destination} on port ${port}"
+open "http://localhost:${port}"
+ssh -NL localhost:${port}:localhost:${port} $destination
