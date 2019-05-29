@@ -5,8 +5,8 @@ port=6006
 if [[ $# -eq 1 ]]; then
     port=$1
 fi
-if [[ ! $HOME == "/Users/sam" ]]; then
+if [[ ! $HOME == "/home/sam" ]]; then
     source $HOME/venv/bin/activate
 fi
-echo "tensorboard running on port ${1}"
+echo "tensorboard running on port ${port}"
 tensorboard --logdir=.
