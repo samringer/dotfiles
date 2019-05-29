@@ -168,7 +168,7 @@ alias g="git"
 alias data="cd /home/sam/data"
 alias ns="nvidia-smi"
 alias tb="$HOME/git/dotfiles/scripts/local_tensorboard_launch.sh"
-alias ltb="source $HOME/venv/bin/activate && tensorboard --logdir=."
+alias ltb="$HOME/git/dotfiles/scripts/remote_tensorboard_launch.sh"
 alias todo="tmux attach -t TODO"
 
 # ls after every cd
