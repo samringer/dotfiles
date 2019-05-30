@@ -170,6 +170,7 @@ alias ns="nvidia-smi"
 alias tb="$HOME/git/dotfiles/scripts/local_tensorboard_launch.sh"
 alias ltb="$HOME/git/dotfiles/scripts/remote_tensorboard_launch.sh"
 alias todo="tmux attach -t TODO"
+alias notes="tmux attach -t NOTES"
 
 # ls after every cd
 function chpwd() {
