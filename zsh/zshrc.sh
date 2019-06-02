@@ -60,6 +60,14 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
+function move_to_exp_dir() {
+    if [[ $(hostname) == "sergei" ]]; then
+        cd ${HOME}/experiments
+    else
+        echo "update this func"
+    fi
+}
+
 # User configuration
 
 source $HOME/.oh-my-zsh/lib/history.zsh
@@ -169,7 +177,7 @@ alias data="cd /home/sam/data"
 alias ns="nvidia-smi"
 alias tb="$HOME/git/dotfiles/scripts/local_tensorboard_launch.sh"
 alias ltb="$HOME/git/dotfiles/scripts/remote_tensorboard_launch.sh"
-alias exp="$HOME/git/dotfiles/scripts/move_to_exp_dir.sh"
+alias exp=move_to_exp_dir
 alias todo="tmux attach -t TODO"
 alias notes="tmux attach -t NOTES"
 
