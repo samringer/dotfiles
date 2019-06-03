@@ -63,8 +63,10 @@ function git_prompt_info() {
 function move_to_exp_dir() {
     if [[ $(hostname) == "sergei" ]]; then
         cd ${HOME}/experiments
+    elif [[ $(hostname) == *".cantabresearch.com" ]]; then
+        cd /cantab/exp0/inbetweeners/metalearning
     else
-        echo "update this func"
+        echo 'update this func'
     fi
 }
 
