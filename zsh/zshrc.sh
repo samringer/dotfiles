@@ -212,4 +212,4 @@ bindkey "^N" history-substring-search-up
 bindkey "^P" history-substring-search-down
 
 # Use iterm2s shell integration features
-source ~/.iterm2_shell_integration.zsh
+#source ~/.iterm2_shell_integration.zsh
