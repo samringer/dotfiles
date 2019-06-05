@@ -14,7 +14,7 @@ if [[ $destination == "codex" ]];
     then destination="samr@code19.cantabresearch.com"
 fi
 if [[ $destination == "sergei" ]];
-    then destination=${NPS_IP}
+    then destination=sam@${NPS_IP}
 fi
 
 port=6006
