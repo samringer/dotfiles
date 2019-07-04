@@ -3,9 +3,9 @@ exp () {
     if [[ $(hostname) == "sergei" ]]; then
         cd ~/experiments
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
-        cd /cantab/exp0/inbetweeners/metalearning
+        cd /cantab/exp0/inbetweeners/APC
     elif [[ $(hostname) == *"cam"* ]]; then
-        cd /cantab/inbetweeners/metealearning
+        cd /cantab/inbetweeners/APC
     else
         echo 'update this func'
     fi
