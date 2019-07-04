@@ -8,5 +8,5 @@ fi
 if [[ ! $HOME == "/home/sam" ]]; then
     source $HOME/venv/bin/activate
 fi
-echo "tensorboard running on port ${port}"
+echo "tensorboard running"
 tensorboard --logdir=.
