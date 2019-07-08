@@ -25,6 +25,19 @@ data () {
     fi
 }
 
+# Move to dev directory relevant to machine
+dev () {
+    if [[ $(hostname) == "sergei" ]]; then
+        echo 'not supported for sergei'
+    elif [[ $(hostname) == *".cantabresearch.com" ]]; then
+        cd /cantab/dev
+    elif [[ $(hostname) == *"cam"* ]]; then
+        echo 'not supported for colo yet'
+    else
+        echo 'update this func'
+    fi
+}
+
 
 # ls after every cd
 function chpwd() {
