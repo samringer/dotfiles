@@ -23,3 +23,4 @@ alias ltb="~/git/dotfiles/scripts/remote_tensorboard_launch.sh"
 alias todo="tmux attach -t TODO"
 alias notes="tmux attach -t NOTES"
 alias gpp='git push --set-upstream origin $(git_current_branch)'
+alias c='cd'
