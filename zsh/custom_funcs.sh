@@ -42,7 +42,7 @@ dev () {
 # ls after every cd
 function chpwd() {
 	emulate -L zsh
-    ls --ignore="__pycache__" --ignore="*.pyc"
+    ls --color --ignore="__pycache__" --ignore="*.pyc"
 }
 
 

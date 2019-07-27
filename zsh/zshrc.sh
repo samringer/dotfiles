@@ -1,10 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+source ~/git/dotfiles/zsh/keybindings.sh
+source ~/git/dotfiles/zsh/aliases.sh
+source ~/git/dotfiles/zsh/custom_funcs.sh
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
-export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$HOME/anaconda3/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 ZSH_THEME="avit"
 
