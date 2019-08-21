@@ -5,7 +5,7 @@ exp () {
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
         cd /cantab/exp0/inbetweeners/APC
     elif [[ $(hostname) == *"cam"* ]]; then
-        cd /cantab/inbetweeners/APC
+        cd /cantab/inbetweeners/metalearning
     else
         echo 'update this func'
     fi
