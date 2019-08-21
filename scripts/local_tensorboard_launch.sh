@@ -16,6 +16,9 @@ fi
 if [[ $destination == "sergei" ]];
     then destination=sam@${NPS_IP}
 fi
+if [[ $destination == "colo" ]];
+    then destination=samr@cam2g01.farm.speechmatics.io
+fi
 
 port=6006
 # Overwrite port if it is given
