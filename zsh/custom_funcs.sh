@@ -1,7 +1,7 @@
 # Move to experiment directory relevant to machine
 exp () {
     if [[ $(hostname) == "sergei" ]]; then
-        cd ~/experiments
+        cd ~/experiments/app_transfer
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
         cd /cantab/exp0/inbetweeners/APC
     elif [[ $(hostname) == *"cam"* ]]; then
