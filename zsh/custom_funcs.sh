@@ -1,7 +1,20 @@
+# Link an experiment directory to an alias quickly
+dirl () {
+    full_link=$(rl ${1})
+    echo "alias ${2}=\"cd $(readlink -f ${1})\"" >> ~/git/dotfiles/zsh/aliases.sh
+    zsh
+}
+
+# Unlink an alias quickly
+dirunlink () {
+    sed -i "/alias ${1}=\"cd/d" ~/git/dotfiles/zsh/aliases.sh
+    zsh
+}
+
 # Move to experiment directory relevant to machine
 exp () {
     if [[ $(hostname) == "sergei" ]]; then
-        cd ~/experiments
+        cd ~/experiments/app_transfer
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
         cd /cantab/exp0/inbetweeners/APC
     elif [[ $(hostname) == *"cam"* ]]; then
