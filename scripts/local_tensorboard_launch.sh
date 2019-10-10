@@ -14,7 +14,7 @@ if [[ $destination == "codex" ]];
     then destination="samr@code19.cantabresearch.com"
 fi
 if [[ $destination == "sergei" ]];
-    then destination=sam@${NPS_IP}
+    then destination=sam@${MOWBRAY_IP}
 fi
 if [[ $destination == "colo" ]];
     then destination=samr@cam2g01.farm.speechmatics.io
