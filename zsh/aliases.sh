@@ -27,6 +27,4 @@ alias gpp='git push --set-upstream origin $(git_current_branch)'
 alias c='cd'
 alias dot='cd $HOME/git/dotfiles'
 alias hdata="cd /cantab/dev/inbetweeners/hydra"
-alias sc="cd /home/samr/git/apc/heads/speaker_change"
 alias ph="cd /home/samr/git/hydra/heads/phone_id"
-alias h="cd /home/samr/git/hydra"
