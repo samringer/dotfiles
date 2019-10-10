@@ -16,7 +16,7 @@ exp () {
     if [[ $(hostname) == "sergei" ]]; then
         cd ~/experiments/app_transfer
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
-        cd /cantab/exp0/inbetweeners/APC
+        cd /cantab/exp0/inbetweeners/hydra
     elif [[ $(hostname) == *"cam"* ]]; then
         cd /cantab/inbetweeners/metalearning
     else
