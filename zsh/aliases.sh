@@ -28,3 +28,5 @@ alias c='cd'
 alias dot='cd $HOME/git/dotfiles'
 alias hdata="cd /cantab/dev/inbetweeners/hydra"
 alias ph="cd /home/samr/git/hydra/heads/phone_id"
+alias h="cd /home/samr/git/hydra"
+alias sc="cd /home/samr/git/hydra/heads/speaker_change"
