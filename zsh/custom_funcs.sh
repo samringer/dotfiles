@@ -6,7 +6,7 @@ dirl () {
 }
 
 # Unlink an alias quickly
-dirunlink () {
+unlink () {
     sed -i "/alias ${1}=\"cd/d" ~/git/dotfiles/zsh/aliases.sh
     zsh
 }
