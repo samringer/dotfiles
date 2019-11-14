@@ -17,7 +17,7 @@ if [[ $destination == "sergei" ]];
     then destination=sam@${MOWBRAY_IP}
 fi
 if [[ $destination == "colo" ]];
-    then destination=samr@cam2g01.farm.speechmatics.io
+    then destination=samr@cam2c02.farm.speechmatics.io
 fi
 
 port=6006
