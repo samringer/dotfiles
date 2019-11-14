@@ -6,7 +6,7 @@ dirl () {
 }
 
 # Unlink an alias quickly
-dirunlink () {
+unlink () {
     sed -i "/alias ${1}=\"cd/d" ~/git/dotfiles/zsh/aliases.sh
     zsh
 }
@@ -16,7 +16,7 @@ exp () {
     if [[ $(hostname) == "sergei" ]]; then
         cd ~/experiments/app_transfer
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
-        cd /cantab/exp0/inbetweeners/APC
+        cd /cantab/exp0/inbetweeners/hydra
     elif [[ $(hostname) == *"cam"* ]]; then
         cd /cantab/inbetweeners/metalearning
     else

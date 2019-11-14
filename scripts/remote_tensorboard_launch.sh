@@ -6,7 +6,7 @@ if [[ $# -eq 1 ]]; then
     port=$1
 fi
 if [[ ! $HOME == "/home/sam" ]]; then
-    source $HOME/venv/bin/activate
+    source $HOME/tb_venv/bin/activate
 fi
 echo "tensorboard running"
 tensorboard --logdir=.
