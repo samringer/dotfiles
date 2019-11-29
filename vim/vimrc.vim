@@ -24,9 +24,13 @@ Plugin 'nvie/vim-flake8'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sandeepcr529/buffet.vim'
+Plugin '907th/vim-auto-save'
 
 " Tmux and vim navigator
 Bundle 'christoomey/vim-tmux-navigator'
+
+" Turn on autosave on vim startup
+let g:auto_save = 1
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
