@@ -31,6 +31,8 @@ data () {
         cd ~/data
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
         cd /cantab/data
+    elif [[ $(hostname) == "cam2aml01"* ]]; then
+        cd /data
     elif [[ $(hostname) == *"cam"* ]]; then
         cd /cantab/data
     else
