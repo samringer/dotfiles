@@ -18,6 +18,7 @@ if [[ $destination == "sergei" ]];
 fi
 if [[ $destination == "aml" ]];
     then destination=samr@cam2aml01.aml.speechmatics.io
+fi
 if [[ $destination == "colo" ]];
     then destination=samr@cam2c02.farm.speechmatics.io
 fi
