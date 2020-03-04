@@ -11,6 +11,14 @@ unlink () {
     zsh
 }
 
+ns () {
+    if [[ $(hostname) == *"bastion"* ]]; then
+        ssh samr@cam2aml01.aml.speechmatics.io 'nvidia-smi'
+    else;
+        nvidia-smi
+    fi
+}
+
 # Move to experiment directory relevant to machine
 exp () {
     if [[ $(hostname) == "sergei" ]]; then
