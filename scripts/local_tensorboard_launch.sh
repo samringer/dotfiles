@@ -17,7 +17,7 @@ if [[ $destination == "sergei" ]];
     then destination=sam@${MOWBRAY_IP}
 fi
 if [[ $destination == "aml" ]];
-    then destination=samr@bastion.aml.speechmatics.io
+    then destination=samr@cam2aml01.aml.speechmatics.io
 fi
 if [[ $destination == "colo" ]];
     then destination=samr@cam2c02.farm.speechmatics.io
