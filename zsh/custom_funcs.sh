@@ -19,21 +19,6 @@ ns () {
     fi
 }
 
-# Move to experiment directory relevant to machine
-exp () {
-    if [[ $(hostname) == "sergei" ]]; then
-        cd ~/experiments/app_transfer
-    elif [[ $(hostname) == "cam2aml01"* ]]; then
-        cd /exp
-    elif [[ $(hostname) == *".cantabresearch.com" ]]; then
-        cd /cantab/exp0/inbetweeners/hydra
-    elif [[ $(hostname) == *"cam"* ]]; then
-        cd /cantab/inbetweeners/metalearning
-    else
-        echo 'update this func'
-    fi
-}
-
 
 # Move to data directory relevant to machine
 data () {
