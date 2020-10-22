@@ -6,9 +6,36 @@ dirl () {
 }
 
 # Unlink an alias quickly
-unlink () {
+dirul () {
     sed -i "/alias ${1}=\"cd/d" ~/git/dotfiles/zsh/aliases.sh
     zsh
+}
+
+# Quickly get output of a job
+qcat () {
+   if [ "$#" -eq 1 ]; then
+	cat $(qstat -j $1 | grep log | grep std | cut -d ":" -f4)
+   else
+	echo "Usage: qcat <jobid>" >&2
+   fi
+}
+
+# Pipe qcat through less
+ql () {
+   if [ "$#" -eq 1 ]; then
+    qcat $1 | less
+   else
+	echo "Usage: ql <jobid>" >&2
+   fi
+}
+
+# Tail the results.log of a job on the queue
+qtail () {
+   if [ "$#" -eq 1 ]; then
+    tail -f $(qstat -j $1 | grep log | grep std | cut -d ":" -f4)
+   else
+	echo "Usage: qtail <jobid>" >&2
+   fi
 }
 
 ns () {
@@ -26,7 +53,7 @@ data () {
         cd ~/data
     elif [[ $(hostname) == *".cantabresearch.com" ]]; then
         cd /cantab/data
-    elif [[ $(hostname) == "cam2aml01"* ]]; then
+    elif [[ $(hostname) == *"aml0"* ]]; then
         cd /data
     elif [[ $(hostname) == *"cam"* ]]; then
         cd /cantab/data
@@ -93,11 +120,3 @@ hi () {
 }
 
 
-# Quickly get output of a job
-qcat () {
-   if [ "$#" -eq 1 ]; then
-	cat $(qstat -j $1 | grep log | grep std | cut -d ":" -f4)
-   else
-	echo "Usage: qcat <jobid>" >&2
-   fi
-}
